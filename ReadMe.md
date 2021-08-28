@@ -27,7 +27,7 @@ La fonction *ouverture()* renvoie une liste de dictionnaires. Chaque dictionnair
 - la valeur associée à la clé *nom* est le nom de l'élève
 - la valeur associée à la clé *notes* est une liste contenant les différentes notes qu'il a déjà eu (ce sont des chaînes de caractères).
 
-![](C:\Users\José\Documents\Git\Tirage_passage_oral\img-liste_dico.jpg)
+![](img-liste_dico.jpg)
 
 
 
