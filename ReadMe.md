@@ -56,7 +56,7 @@ Ainsi, un élève qui a une moyenne basse sera plus souvent interrogé qu'un él
 <img src="https://render.githubusercontent.com/render/math?math=score = \dfrac{(coeff\_passage * nbre\ de \ passage * POINT\_PASSAGE) %2B (coeff\_notes * moyennes\ notes)}{coeff\_passage %2B coeff\_notes}">
   
   
-- Les élèves éligibles (5 au minimum) sont placés dans un tableau. On effectue ensuite un tirage au sort d'un élève parmi ceux-là.
+- Les élèves éligibles (5 au minimum) sont placés dans un tableau. On commence alors par l'élève qui a le score le plus faible.
 
 
 
