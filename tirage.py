@@ -264,7 +264,7 @@ def calcul_score(nb_notes, moyenne):
     d = {}
     for cle in nb_notes.keys():
         if nb_notes[cle] != 0:
-            d[cle] = (nb_notes[cle]*COEFF_NOTES + moyenne[cle]*COEFF_PASSAGE)/(COEFF_NOTES + COEFF_PASSAGE)
+            d[cle] = (nb_notes[cle]*COEFF_NOTES*POINT_PASSAGE + moyenne[cle]*COEFF_PASSAGE)/(COEFF_NOTES + COEFF_PASSAGE)
         else:
             d[cle] = 0.0
 
@@ -491,7 +491,8 @@ while len(liste_eleves_eligibles) < 5:
 # tirage au sort de l'élève et suppression de la liste des élèves éligibles
 reponse = 'O'
 while reponse == 'O' and len(liste_eleves_eligibles) != 0:
-    eleve_oral = tirage(liste_eleves_eligibles)
+    # eleve_oral = tirage(liste_eleves_eligibles)
+    eleve_oral = liste_eleves_eligibles[0]
     print(f"l'élève tiré au sort est {eleve_oral}")
     liste_eleves_eligibles.remove(eleve_oral)
 
