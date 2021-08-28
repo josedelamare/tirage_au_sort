@@ -1,4 +1,4 @@
-### Tirage au sort d'un ordre de passage à l'oral
+# Tirage au sort d'un ordre de passage à l'oral
 
 Ce logiciel a été réalisé en Python. Il permet, à partir d'un fichier CSV, de générer une liste d'élèves susceptibles de passer à l'oral.
 
@@ -52,10 +52,9 @@ Ainsi, un élève qui a une moyenne basse sera plus souvent interrogé qu'un él
 
 - On effectue la moyenne de toutes les notes déjà obtenues (variable *moyenne_des_notes*).
 
-- On détermine un score pour chaque élève par le calcul suivant :
-  $$
-  score = \dfrac{(coeff\_passage * nbre\ de \ passage) + (coeff\_notes * moyennes\ notes)}{coeff\_passage + coeff\_notes}
-  $$
+- On détermine un score pour chaque élève par le calcul suivant : 
+<img src="https://render.githubusercontent.com/render/math?math=score = \dfrac{(coeff\_passage * nbre\ de \ passage * POINT\_PASSAGE) %2B (coeff\_notes * moyennes\ notes)}{coeff\_passage %2B coeff\_notes}">
+  
   
 - Les élèves éligibles (5 au minimum) sont placés dans un tableau. On effectue ensuite un tirage au sort d'un élève parmi ceux-là.
 
